@@ -20,7 +20,6 @@
 			border: 1px solid black;
 			padding: .2em 1em .2em .5em;
 			text-align: left;
-			vertical-align: middle;
 		}
 		.right {
 			text-align: right;
@@ -28,13 +27,19 @@
 		tbody tr:nth-child(even) td {
 			background-color: yellow;
 		}
+		tfoot{
+			background-color: yellow;
+			font-weight: bold;
+		}
 	</style>
 </head>
 
 <body>
 <table>
+	<caption> Employee Table</caption>
 	<thead>
 		<tr>
+			<th> Department</th>
 			<th>Name</th>
 			<th>E-mail</th>
 			<th class="right">Years of Service</th>
@@ -42,41 +47,54 @@
 	</thead>
 	<tbody>
 		<tr>
+			<td>Editorial</td>
 			<td>Joel Murach</td>
 			<td>joelmurach@yahoo.com</td>
 			<td class="right">22</td>
 		</tr>
 		<tr>
+			<td>Editorial</td>
 			<td>Anne Boehm</td>
 			<td>anne@murach.com</td>
 			<td class="right">34</td>
 		</tr>
 		<tr>
+			<td>Editorial</td>
 			<td>Zak Ruvalcaba</td>
 			<td>zak@modulemedia.com</td>
 			<td class="right">4</td>
 		</tr>
 		<tr>
+			<td>Marketing</td>
 			<td>Judy Taylor</td>
 			<td>judy@murach.com</td>
 			<td class="right">39</td>
 		</tr>
 		<tr>
+			<td>Marketing</td>
 			<td>Bethany Lee</td>
 			<td>bethany@murach.com</td>
 			<td class="right">10</td>
 		</tr>
 		<tr>
+			<td>Customer Service</td>
 			<td>Kelly Slivkoff</td>
 			<td>kelly@murach.com</td>
 			<td class="right">25</td>
 		</tr>
 		<tr>
+			<td>Customer Service</td>
 			<td>Juliette Baylon</td>
 			<td>juliette@murach.com</td>
 			<td class="right">1</td>
 		</tr>
 	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="3"> Total Years of Service</td>
+			<td class="right">105</td>
+		</tr>
+	</tfoot>
 </table>
 </body>
 </html>
